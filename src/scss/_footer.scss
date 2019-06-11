@@ -1,0 +1,46 @@
+footer{
+  height: 500px;
+  padding-top: 100px;
+  // per gli span del footer
+  span{
+    font-size: $footer_font_size;
+    font-weight: bold;
+  }
+  // per la prima colonna, più grande
+  .giant_col{
+    float: left;
+    width: 30%;
+    display: flex;
+    // per l'immagine del logo di Teambit
+    img{
+      width: 100px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    // per il link Teambit
+    a{
+      color: $link_hover;
+      // quando passo sopra il mouse
+      &:hover{
+        text-decoration: underline;
+        color: $color_hover_learnmore_lastteambit;
+      }
+    }
+  }
+  // per le altre colonne, più piccole
+  .small_col{
+    width: 14%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    // per gli span in queste colonne
+    span{
+      margin-bottom: 20px;
+    }
+    // per tutti i link in queste colonne
+    a{
+      margin: 10px 0;
+      font-size: $font_size_little;
+    }
+  }
+}

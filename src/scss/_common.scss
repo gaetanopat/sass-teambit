@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  color: $text_color;
+  font-family: 'HarmoniaSansProCyr-Regular', Arial, sans-serif;
+}
+// per il container
+.container{
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+// per i link in generale
+a{
+  text-decoration: none;
+  color: $text_color;
+  &:hover{
+    color: $link_hover;
+  }
+}
+
+
+.first_section, .last_section{
+  // per il contenitore di 'Sign up with Google' 'or' 'Sign up with Slack'
+  .first_section_buttons{
+    height: $first_section_buttons_height;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    // per 'Sign up with Google' e 'Sign up with Slack'
+    a{
+      color: $white_color;
+      font-size: $button_font_size;
+      padding: calc((35px - #{$button_font_size})/2) 20px;
+      background-color: $link_hover;
+      border-radius: $buttons_border_radius;
+      // quando passo sopra il mouse
+      &:hover{
+        background-color: $background_button_hover;
+      }
+    }
+    // per l'or span
+    span{
+      font-size: .8125rem;
+      color: #bdb5af;
+      line-height: $first_section_buttons_height;
+      margin: 0 10px;
+    }
+  }
+  // per 'or use your email address'
+  .email_address{
+    font-size: $font_size_little;
+    // quando passo sopra il mouse
+    &:hover{
+      color: $link_hover;
+    }
+  }
+}
+
+// per la terza, quarta, quinta e sesta sezione
+.third_section, .fourth_section, .fifth_section, .sixth_section{
+  height: $single_section_height;
+  // per gli h3 di queste sezioni
+  h3{
+    font-size: $font_size_medium;
+  }
+  // per i paragrafi di queste sezioni
+  p{
+    font-size: $font_size_for_some_paragraphs;
+    margin: 40px 0;
+  }
+  // per i link di queste sezioni
+  a{
+    color: $link_hover;
+    &:hover{
+      color: $color_hover_learnmore_lastteambit;
+    }
+  }
+  // per le immagini di queste seioni (più piccole)
+  img{
+    margin-top: 20px;
+    width: 270px;
+    height: 200px;
+  }
+}
+
+// per la sezione di sinistra e quella di destra
+.section_left, .section_right{
+  width: 50%;
+  height: $single_section_height;
+  float: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// per l'icona della chat
+.fa-comment{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 60px;
+  color: $link_hover;
+}

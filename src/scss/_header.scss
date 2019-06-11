@@ -1,0 +1,71 @@
+header{
+  width: 100%;
+  height: $header_height;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  // per l'header-left
+  .header_left{
+    height: $header_height;
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    // per il logo
+    .logo{
+      background-image: url('https://teambit.io/wp-content/themes/teambeat/img/logo.svg');
+      float: left;
+      width: 110px;
+      height: 35px;
+      overflow: hidden;
+      text-indent: 101%;
+      white-space: nowrap;
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  // per l'header-right
+  .header_right{
+    height: $header_height;
+    width: 50%;
+    float: right;
+    text-align: right;
+    // per i link dell'header-left
+    ul li{
+      display: inline-block;
+      font-size: $font_size_little;
+      margin: 0 20px;
+      line-height: $header_height;
+      font-weight: bold;
+      // per Sign up
+      &:last-child{
+        margin-right: 0;
+      }
+      // per il link Sign up
+      .sign_up{
+        padding: 10px;
+        border: 1px solid $link_hover;
+        border-radius: 10px;
+        // quando passo sopra il mouse
+        &:hover{
+          background-color: $link_hover;
+          color: $white_color;
+        }
+      }
+    }
+  }
+}
+
+// mi servono quando scrollo la pagina
+.border-bot{
+  border-bottom: $border_bottom;
+}
+.button-color{
+  color: $link_hover;
+}
+.color_after_scroll{
+  background-color: $link_hover;
+  color: white;
+}

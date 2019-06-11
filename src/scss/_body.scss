@@ -1,0 +1,192 @@
+// prima sezione
+.first_section{
+  margin-top: $header_height;
+  height: $single_section_height;
+  // per la parte di sinistra
+  .section_left{
+    // per il titolo 'Understand, recognize and develop your people'
+    h1{
+      font-size: 50px;
+    }
+    // per il paragrafo 'Teambit helps teams create a high performing culture with regular feedback.'
+    p{
+      margin: 20px 0;
+      margin-right: 50px;
+      font-size: $font_size_for_some_paragraphs;
+    }
+  }
+  // per la parte di destra (per l'immagine)
+  .section_right img{
+    width: 100%;
+    height: 400px;
+  }
+}
+
+
+// per la seconda sezione
+.second_section{
+  height: auto;
+  text-align: center;
+  background-color: $pink_background;
+  // per il titolo 'It doesn't have to be like that. Teambit is a modern solution that teammates love.'
+  h2{
+    padding: 100px 250px;
+    font-size: $font_size_medium;
+  }
+  // per il contenitore delle 3 immagini
+  .three_columns{
+    width: 70%;
+    height: $three_columns_height;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    // per le tre colonne
+    .first_col, .second_col, .third_col{
+      float: left;
+      width: 270px;
+      height: $three_columns_height;
+      // per i paragrafi delle colonne
+      p{
+        margin: 0 20px;
+        font-size: 16px;
+        font-weight: normal;
+      }
+      // per le immagini
+      img{
+        width: 140px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+      // per l'ultima immagine che ha una width più piccola
+      .last_img{
+        width: 60px;
+      }
+    }
+  }
+  // per l'immagine grande del coniglietto
+  img{
+    width: 280px;
+    height: 280px;
+  }
+  // per la linea (tipo hr)
+  .line{
+    border-bottom: $border_bottom;
+    width: 100%;
+    margin-top: 100px;
+  }
+  // per i paragrafi
+  p{
+    margin: 100px 0;
+    font-size: $font_size_medium;
+    font-weight: bold;
+  }
+}
+
+// per la terza e la quinta sezione
+.third_section, .fifth_section{
+  // per l'immagine della parte di sinistra (immagine grande)
+  .section_left img{
+    width: 100%;
+    height: 400px;
+  }
+  // per la parte di destra
+  .section_right{
+    width: 30%;
+  }
+}
+
+// per la quarta e la sesta sezione
+.fourth_section, .sixth_section{
+  // per la parte di sinistra
+  .section_left{
+    margin-left: 15%;
+    width: 35%;
+    // per l'immagine
+    img{
+      height: 275px;
+    }
+  }
+  // per la parte di destra (per l'immagine grande)
+  .section_right img{
+    width: 100%;
+    height: 400px;
+  }
+}
+
+// per l'immagine della quinta sezione (di destra)
+.fifth_section .section_right img{
+  width: 320px;
+  height: 200px;
+}
+// per l'immagine della sesta sezione (di destra)
+.sixth_section .section_left img{
+  height: 270px;
+}
+
+// per l'ultima sezione, prima del footer
+.last_section{
+  background-color: $pink_background;
+  height: auto;
+  width: 100%;
+  // per il titolo 'See Teambit for yourself. Get started in seconds'
+  h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px 400px;
+  }
+  // per il riquadro con le opinioni
+  .quote{
+    width: 628px;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #bdb5af;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: $buttons_border_radius;
+    position: relative;
+    // per le virgolette
+    .fa-quote-left{
+      position: absolute;
+      top: -10px;
+      font-size: 30px;
+      color: $link_hover;
+      left: 0;
+    }
+  }
+  // per il div che contiene le immagini dei founders
+  .images_founders{
+    height: 40px;
+    display: flex;
+    margin-top: 20px;
+    // per le due immagini dei founders
+    img{
+      height: 100%;
+      width: 40px;
+      margin-right: 10px;
+    }
+  }
+  // per il div che contiene i nomi dei founders
+  .name_founders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // per i due span Alex and Bohdan e Co-Founders at Teambit
+    span{
+      display: block;
+    }
+    // per i nomi Alex and Bohdan
+    .name{
+      font-size: $button_font_size;
+      color: $link_hover;
+    }
+    // per Co-Founders at Teambit
+    .co_founders{
+      font-size: .75rem;
+    }
+  }
+  // sempre nell'ultima sezione per il div che contiene i bottoni e 'or use your email address'
+  .first_section_buttons,
+  .container_email_address{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+}
